@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #290101;
+  color: #333;
+}
+
+.navbar {
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.nav-links a:hover {
+  background-color: #333;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #000000;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 900px;
+}
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 18px;
+  color: #8b8686;
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+.movie {
+  background-color: rgb(2, 0, 0);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.movie:hover {
+  transform: translateY(-5px);
+}
+.movie img {
+  width: 100%;
+  border-radius: 8px;
+}
+.movie h3 {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.booking {
+  background-color: #030000;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(235, 230, 230, 0.1);
+}
+.booking h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.booking form {
+  display: flex;
+  flex-direction: column;
+}
+.booking label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.booking input,
+.booking select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #1a1717;
+  font-size: 16px;
+}
+.booking button {
+  background-color: #121212;
+  color: rgb(206, 129, 129);
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.booking button:hover {
+  background-color: #333;
+}
+
+footer {
+  text-align: center;
+  background-color: #121212;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    margin-top: 10px;
+  }
+  .movies {
+    flex-direction: column;
+    align-items: center;
+  }
+  }
